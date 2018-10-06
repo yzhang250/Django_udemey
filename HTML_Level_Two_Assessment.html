@@ -2,19 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>EXERCISE TITLE</title>
+    <title>EXERCISE TWO</title>
 </head>
 <body>
-<h1>This is a header</h1>
-<ol>
-    <li><em>Python is good</em></li>
-    <li>Django is fine</li>
-    <ul>
-        <li>Scalable and <strong>easy</strong> to deploy!</li>
-        <li>OK, I don't know what else!</li>
+<h1>Course Sign Up Page</h1>
+    <p>Please Note: First Name, Last Name, Password, Email are required</p>
+    <form action="thankyou.html" method="get">
+        <label for="fn" >
+            First Name: <input id="fn" type="text" required name="firstName" placeholder="First Nmae">
+            </label>
 
-    </ul>
-</ol>
-<a href="https://www.python.org/"><img src="http://www.futurista.sk/wp-content/uploads/2015/12/Python_school_pic__.png"></a>
+        <label for="ln">
+            Last Name: <input id="ln" type="text" required name="lastName" placeholder="Last Nmae">
+        </label>
+
+        <p></p>
+
+        <label for="mail">
+                Email: <input id="mail" type="email" required placeholder="name@email.com">
+            </label>
+            <label for="pass">
+                Password:
+                <input id="pass" type="password" required>
+                </label>
+
+        <p>Are you over the age of 18?</p>
+        <label for="yes">
+            Yes: <input id="yes" type="radio" name="age" required value="Yes">
+        </label>
+            <label for="no">
+                No:<input id="no" type="radio" name="age" required value="No"></p>
+        </label>
+        <p>Do you have a credit card or paypal?</p>
+        <select name="payment">
+            <option value="Credit card">Credit card</option>
+            <option value="PayPal">Paypal</option>
+        </select>
+        <input type="submit" value="sign up!">
+    </form>
 </body>
 </html>

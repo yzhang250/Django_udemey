@@ -1,0 +1,38 @@
+/* selected tag{
+  property: value;
+} */
+
+/* . indicates that this is selcted by class */
+.firstDiv{
+  color: red;
+}
+
+.secondDiv{
+  color: blue;
+}
+
+/* The # indicates this is select by ID */
+#singledout{
+  color: green;
+  text-decoration: line-through;
+}
+
+/* *{
+  color:black;
+} */
+
+/* This is selcting ul right after an h3 heading */
+h3 + ul{
+  border: 4px dotted purple;
+}
+
+/* descendents means a tag inside a tag*/
+li a{
+  color: red;
+}
+
+/* attributes */
+li a[href="www.npr.org"]{
+  color: blue;
+  border: 5px solid orange;
+}
